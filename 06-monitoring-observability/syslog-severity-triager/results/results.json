@@ -1,0 +1,252 @@
+{
+  "n_raw_lines": 26,
+  "n_parsed": 25,
+  "n_parse_errors": 1,
+  "n_aggregated_entries": 16,
+  "buckets": {
+    "critical": 15,
+    "warning": 7,
+    "info": 3
+  },
+  "top_entries": [
+    {
+      "hostname": "dist-sw2",
+      "facility": "LINK",
+      "severity": 3,
+      "severity_name": "error",
+      "mnemonic": "UPDOWN",
+      "message": "Interface GigabitEthernet0/3, changed state to down",
+      "count": 7,
+      "first_seen": "Jan 15 09:20:03",
+      "last_seen": "Jan 15 09:20:15"
+    },
+    {
+      "hostname": "edge-fw1",
+      "facility": "ACL",
+      "severity": 3,
+      "severity_name": "error",
+      "mnemonic": "DENY",
+      "message": "access denied tcp 203.0.113.9 -> 10.20.0.10",
+      "count": 3,
+      "first_seen": "Jan 15 09:45:12",
+      "last_seen": "Jan 15 09:45:14"
+    },
+    {
+      "hostname": "core-sw1",
+      "facility": "OSPF",
+      "severity": 5,
+      "severity_name": "notice",
+      "mnemonic": "ADJCHG",
+      "message": "Process 1, Nbr 10.0.0.3 on GigabitEthernet0/2 from FULL to DOWN, Neighbor Down: Dead timer expired",
+      "count": 2,
+      "first_seen": "Jan 15 10:30:00",
+      "last_seen": "Jan 15 10:31:00"
+    },
+    {
+      "hostname": "core-sw1",
+      "facility": "SYS",
+      "severity": 5,
+      "severity_name": "notice",
+      "mnemonic": "CONFIG_I",
+      "message": "Configured from console by admin on vty0",
+      "count": 1,
+      "first_seen": "Jan 15 09:00:01",
+      "last_seen": "Jan 15 09:00:01"
+    },
+    {
+      "hostname": "core-sw1",
+      "facility": "LINEPROTO",
+      "severity": 5,
+      "severity_name": "notice",
+      "mnemonic": "UPDOWN",
+      "message": "Line protocol on Interface GigabitEthernet0/1, changed state to up",
+      "count": 1,
+      "first_seen": "Jan 15 09:01:15",
+      "last_seen": "Jan 15 09:01:15"
+    }
+  ],
+  "aggregated": [
+    {
+      "hostname": "core-sw1",
+      "facility": "SYS",
+      "severity": 5,
+      "severity_name": "notice",
+      "mnemonic": "CONFIG_I",
+      "message": "Configured from console by admin on vty0",
+      "count": 1,
+      "first_seen": "Jan 15 09:00:01",
+      "last_seen": "Jan 15 09:00:01"
+    },
+    {
+      "hostname": "core-sw1",
+      "facility": "LINEPROTO",
+      "severity": 5,
+      "severity_name": "notice",
+      "mnemonic": "UPDOWN",
+      "message": "Line protocol on Interface GigabitEthernet0/1, changed state to up",
+      "count": 1,
+      "first_seen": "Jan 15 09:01:15",
+      "last_seen": "Jan 15 09:01:15"
+    },
+    {
+      "hostname": "edge-fw1",
+      "facility": "ACL",
+      "severity": 3,
+      "severity_name": "error",
+      "mnemonic": "DENY",
+      "message": "access denied tcp 203.0.113.5 -> 10.20.0.10",
+      "count": 1,
+      "first_seen": "Jan 15 09:15:22",
+      "last_seen": "Jan 15 09:15:22"
+    },
+    {
+      "hostname": "dist-sw2",
+      "facility": "LINK",
+      "severity": 3,
+      "severity_name": "error",
+      "mnemonic": "UPDOWN",
+      "message": "Interface GigabitEthernet0/3, changed state to down",
+      "count": 7,
+      "first_seen": "Jan 15 09:20:03",
+      "last_seen": "Jan 15 09:20:15"
+    },
+    {
+      "hostname": "dist-sw2",
+      "facility": "LINEPROTO",
+      "severity": 5,
+      "severity_name": "notice",
+      "mnemonic": "UPDOWN",
+      "message": "Line protocol on Interface GigabitEthernet0/3, changed state to up",
+      "count": 1,
+      "first_seen": "Jan 15 09:25:00",
+      "last_seen": "Jan 15 09:25:00"
+    },
+    {
+      "hostname": "core-sw1",
+      "facility": "SYS",
+      "severity": 2,
+      "severity_name": "critical",
+      "mnemonic": "MALLOCFAIL",
+      "message": "Memory allocation failed for process BGP",
+      "count": 1,
+      "first_seen": "Jan 15 09:30:11",
+      "last_seen": "Jan 15 09:30:11"
+    },
+    {
+      "hostname": "core-sw1",
+      "facility": "BGP",
+      "severity": 5,
+      "severity_name": "notice",
+      "mnemonic": "ADJCHANGE",
+      "message": "neighbor 10.0.0.2 Up",
+      "count": 1,
+      "first_seen": "Jan 15 09:31:00",
+      "last_seen": "Jan 15 09:31:00"
+    },
+    {
+      "hostname": "edge-fw1",
+      "facility": "ACL",
+      "severity": 3,
+      "severity_name": "error",
+      "mnemonic": "DENY",
+      "message": "access denied tcp 203.0.113.9 -> 10.20.0.10",
+      "count": 3,
+      "first_seen": "Jan 15 09:45:12",
+      "last_seen": "Jan 15 09:45:14"
+    },
+    {
+      "hostname": "core-sw1",
+      "facility": "SYS",
+      "severity": 6,
+      "severity_name": "informational",
+      "mnemonic": "LOGGINGHOST_STARTSTOP",
+      "message": "Logging to host 10.0.0.5 started",
+      "count": 1,
+      "first_seen": "Jan 15 10:00:00",
+      "last_seen": "Jan 15 10:00:00"
+    },
+    {
+      "hostname": "dist-sw2",
+      "facility": "SPANTREE",
+      "severity": 2,
+      "severity_name": "critical",
+      "mnemonic": "LOOPGUARD_BLOCK",
+      "message": "Loop guard blocking port GigabitEthernet0/5 on VLAN0010",
+      "count": 1,
+      "first_seen": "Jan 15 10:05:44",
+      "last_seen": "Jan 15 10:05:44"
+    },
+    {
+      "hostname": "core-sw1",
+      "facility": "SYS",
+      "severity": 7,
+      "severity_name": "debug",
+      "mnemonic": "DEBUG",
+      "message": "debug message for troubleshooting",
+      "count": 1,
+      "first_seen": "Jan 15 10:10:00",
+      "last_seen": "Jan 15 10:10:00"
+    },
+    {
+      "hostname": "edge-fw1",
+      "facility": "SYS",
+      "severity": 4,
+      "severity_name": "warning",
+      "mnemonic": "WARNING",
+      "message": "high CPU utilization detected",
+      "count": 1,
+      "first_seen": "Jan 15 10:15:30",
+      "last_seen": "Jan 15 10:15:30"
+    },
+    {
+      "hostname": "dist-sw2",
+      "facility": "LINK",
+      "severity": 3,
+      "severity_name": "error",
+      "mnemonic": "UPDOWN",
+      "message": "Interface GigabitEthernet0/7, changed state to down",
+      "count": 1,
+      "first_seen": "Jan 15 10:20:00",
+      "last_seen": "Jan 15 10:20:00"
+    },
+    {
+      "hostname": "core-sw1",
+      "facility": "SYS",
+      "severity": 0,
+      "severity_name": "emergency",
+      "mnemonic": "EMERGENCY",
+      "message": "system halted unexpectedly",
+      "count": 1,
+      "first_seen": "Jan 15 10:25:00",
+      "last_seen": "Jan 15 10:25:00"
+    },
+    {
+      "hostname": "core-sw1",
+      "facility": "OSPF",
+      "severity": 5,
+      "severity_name": "notice",
+      "mnemonic": "ADJCHG",
+      "message": "Process 1, Nbr 10.0.0.3 on GigabitEthernet0/2 from FULL to DOWN, Neighbor Down: Dead timer expired",
+      "count": 2,
+      "first_seen": "Jan 15 10:30:00",
+      "last_seen": "Jan 15 10:31:00"
+    },
+    {
+      "hostname": "dist-sw2",
+      "facility": "SYS",
+      "severity": 6,
+      "severity_name": "informational",
+      "mnemonic": "LOGGINGHOST_STARTSTOP",
+      "message": "Logging to host 10.0.0.5 started",
+      "count": 1,
+      "first_seen": "Jan 15 10:40:00",
+      "last_seen": "Jan 15 10:40:00"
+    }
+  ],
+  "parse_errors": [
+    {
+      "line": "this is not a valid syslog line at all",
+      "reason": "does not match expected syslog format"
+    }
+  ]
+}

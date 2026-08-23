@@ -17,7 +17,7 @@ The table below is generated from each project's `meta.json` (run
 | [Subnet Calculator](03-ip-address-management/subnet-calculator/) | `03-ip-address-management` | ✅ | CIDR subnet math and a VLSM allocator that carves a supernet into subnets sized to host-count requirements without overlap, allocating largest-first to keep every block naturally aligned. |
 | [Reachability Matrix Tester](04-network-validation-testing/reachability-matrix-tester/) | `04-network-validation-testing` | 🔨 | Tests expected reachability between subnet pairs against a set of ACL and static-route rules, reporting where declared intent and actual policy disagree. |
 | [ACL Rule Auditor](05-security-compliance/acl-rule-auditor/) | `05-security-compliance` | ✅ | Audit mocked device ACLs for overly permissive, shadowed, and unused rules using structural network and service matching. |
-| [Syslog Severity Triager](06-monitoring-observability/syslog-severity-triager/) | `06-monitoring-observability` | 🔨 | Parses Cisco-IOS-style syslog lines into structured records, buckets them by severity, and collapses consecutive repeats (e.g. a flapping interface) into aggregated counts. |
+| [Syslog Severity Triager](06-monitoring-observability/syslog-severity-triager/) | `06-monitoring-observability` | ✅ | Parses Cisco-IOS-style syslog lines into structured records, buckets them by severity, and collapses consecutive repeats (e.g. a flapping interface) into aggregated counts. |
 | [Topology Graph Builder](07-topology-discovery/topology-graph-builder/) | `07-topology-discovery` | ✅ | Builds an undirected adjacency graph from LLDP/CDP-style neighbor records, finds isolated components, and locates articulation points (Tarjan's algorithm) that are single points of failure. |
 | [Inventory-Driven Task Runner](08-automation-frameworks/inventory-driven-task-runner/) | `08-automation-frameworks` | 🔨 | Filters a device inventory by field/tag criteria and runs a task across the filtered set with real bounded thread-pool concurrency, isolating per-device failures. |
 | [MAC Address Table Analyzer](09-protocol-analysis/mac-address-table-analyzer/) | `09-protocol-analysis` | 🔨 | Parses per-switch MAC address tables and detects MAC flapping — the same MAC address learned on different ports within a short window, a sign of a loop or spoofing. |
@@ -79,7 +79,7 @@ The table below is generated from each project's `meta.json` (run
 
 ### 06 · Monitoring & Observability
 
-- ⬜ `syslog-severity-triager` — parse syslog streams, classify severity, dedupe/aggregate repeats
+- ✅ `syslog-severity-triager` — parse syslog streams, classify severity, dedupe/aggregate repeats
 - ⬜ `snmp-threshold-alerter` — evaluate polled metrics against thresholds, alert with hysteresis
 - ⬜ `interface-flap-detector` — detect flapping interfaces from a state-change log
 - ⬜ `netflow-top-talkers` — summarize top talkers/conversations from mock flow records

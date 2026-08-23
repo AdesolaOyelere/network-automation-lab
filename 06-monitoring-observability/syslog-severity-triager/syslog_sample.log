@@ -1,0 +1,26 @@
+Jan 15 09:00:01 core-sw1 %SYS-5-CONFIG_I: Configured from console by admin on vty0
+Jan 15 09:01:15 core-sw1 %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+Jan 15 09:15:22 edge-fw1 %ACL-3-DENY: access denied tcp 203.0.113.5 -> 10.20.0.10
+Jan 15 09:20:03 dist-sw2 %LINK-3-UPDOWN: Interface GigabitEthernet0/3, changed state to down
+Jan 15 09:20:04 dist-sw2 %LINK-3-UPDOWN: Interface GigabitEthernet0/3, changed state to down
+Jan 15 09:20:06 dist-sw2 %LINK-3-UPDOWN: Interface GigabitEthernet0/3, changed state to down
+Jan 15 09:20:08 dist-sw2 %LINK-3-UPDOWN: Interface GigabitEthernet0/3, changed state to down
+Jan 15 09:20:10 dist-sw2 %LINK-3-UPDOWN: Interface GigabitEthernet0/3, changed state to down
+Jan 15 09:20:13 dist-sw2 %LINK-3-UPDOWN: Interface GigabitEthernet0/3, changed state to down
+Jan 15 09:20:15 dist-sw2 %LINK-3-UPDOWN: Interface GigabitEthernet0/3, changed state to down
+Jan 15 09:25:00 dist-sw2 %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/3, changed state to up
+Jan 15 09:30:11 core-sw1 %SYS-2-MALLOCFAIL: Memory allocation failed for process BGP
+Jan 15 09:31:00 core-sw1 %BGP-5-ADJCHANGE: neighbor 10.0.0.2 Up
+Jan 15 09:45:12 edge-fw1 %ACL-3-DENY: access denied tcp 203.0.113.9 -> 10.20.0.10
+Jan 15 09:45:13 edge-fw1 %ACL-3-DENY: access denied tcp 203.0.113.9 -> 10.20.0.10
+Jan 15 09:45:14 edge-fw1 %ACL-3-DENY: access denied tcp 203.0.113.9 -> 10.20.0.10
+Jan 15 10:00:00 core-sw1 %SYS-6-LOGGINGHOST_STARTSTOP: Logging to host 10.0.0.5 started
+Jan 15 10:05:44 dist-sw2 %SPANTREE-2-LOOPGUARD_BLOCK: Loop guard blocking port GigabitEthernet0/5 on VLAN0010
+Jan 15 10:10:00 core-sw1 %SYS-7-DEBUG: debug message for troubleshooting
+Jan 15 10:15:30 edge-fw1 %SYS-4-WARNING: high CPU utilization detected
+Jan 15 10:20:00 dist-sw2 %LINK-3-UPDOWN: Interface GigabitEthernet0/7, changed state to down
+Jan 15 10:25:00 core-sw1 %SYS-0-EMERGENCY: system halted unexpectedly
+Jan 15 10:30:00 core-sw1 %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.3 on GigabitEthernet0/2 from FULL to DOWN, Neighbor Down: Dead timer expired
+Jan 15 10:31:00 core-sw1 %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.3 on GigabitEthernet0/2 from DOWN to FULL, Neighbor Up: New neighbor
+Jan 15 10:40:00 dist-sw2 %SYS-6-LOGGINGHOST_STARTSTOP: Logging to host 10.0.0.5 started
+this is not a valid syslog line at all

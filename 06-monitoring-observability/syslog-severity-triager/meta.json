@@ -1,0 +1,8 @@
+{
+  "title": "Syslog Severity Triager",
+  "slug": "syslog-severity-triager",
+  "category": "06-monitoring-observability",
+  "status": "done",
+  "skills": ["log-parsing", "syslog", "python"],
+  "summary": "Parses Cisco-IOS-style syslog lines into structured records, buckets them by severity, and collapses consecutive repeats (e.g. a flapping interface) into aggregated counts."
+}
