@@ -1,0 +1,22 @@
+hostname branch-rtr-02
+service timestamps log datetime msec
+ip domain name lab.example
+ip name-server 192.0.2.53
+ip name-server 192.0.2.54
+interface GigabitEthernet0/0
+ description WAN uplink
+ ip address 198.51.100.6 255.255.255.252
+ no shutdown
+!
+interface GigabitEthernet0/1
+ description User LAN
+ ip address 10.40.0.1 255.255.255.0
+ ip helper-address 10.99.0.10
+ ip helper-address 10.99.0.11
+ no shutdown
+!
+router ospf 20
+ router-id 10.255.0.2
+ network 10.40.0.0 0.0.0.255 area 0
+!
+end

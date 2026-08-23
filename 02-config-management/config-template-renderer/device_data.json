@@ -1,0 +1,31 @@
+{
+  "hostname": "branch-rtr-02",
+  "domain_name": "lab.example",
+  "name_servers": [
+    {"address": "192.0.2.53"},
+    {"address": "192.0.2.54"}
+  ],
+  "interfaces": [
+    {
+      "name": "GigabitEthernet0/0",
+      "description": "WAN uplink",
+      "ipv4": {"address": "198.51.100.6", "mask": "255.255.255.252"},
+      "helpers": [],
+      "state": "no shutdown"
+    },
+    {
+      "name": "GigabitEthernet0/1",
+      "description": "User LAN",
+      "ipv4": {"address": "10.40.0.1", "mask": "255.255.255.0"},
+      "helpers": [{"address": "10.99.0.10"}, {"address": "10.99.0.11"}],
+      "state": "no shutdown"
+    }
+  ],
+  "ospf": {
+    "process_id": 20,
+    "router_id": "10.255.0.2",
+    "networks": [
+      {"prefix": "10.40.0.0", "wildcard": "0.0.0.255", "area": 0}
+    ]
+  }
+}

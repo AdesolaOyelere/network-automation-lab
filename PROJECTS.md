@@ -12,6 +12,7 @@ The table below is generated from each project's `meta.json` (run
 <!-- INDEX:TABLE:START -->
 | Project | Category | Status | Summary |
 |---|---|---|---|
+| [Config Template Renderer](02-config-management/config-template-renderer/) | `02-config-management` | ✅ | Render deterministic IOS-style device configurations from reusable text templates and validated structured JSON data. |
 | [Golden Config Drift Detector](02-config-management/golden-config-drift-detector/) | `02-config-management` | ✅ | Compare mocked device running configuration against a golden baseline and report normalized missing, unexpected, and changed configuration. |
 | [Subnet Calculator](03-ip-address-management/subnet-calculator/) | `03-ip-address-management` | ✅ | CIDR subnet math and a VLSM allocator that carves a supernet into subnets sized to host-count requirements without overlap, allocating largest-first to keep every block naturally aligned. |
 | [ACL Rule Auditor](05-security-compliance/acl-rule-auditor/) | `05-security-compliance` | ✅ | Audit mocked device ACLs for overly permissive, shadowed, and unused rules using structural network and service matching. |
@@ -34,7 +35,7 @@ The table below is generated from each project's `meta.json` (run
 ### 02 · Config Management
 
 - ✅ `golden-config-drift-detector` — diff running config against a golden template, flag drift
-- ⬜ `config-template-renderer` — templating engine for device configs from structured data
+- ✅ `config-template-renderer` — templating engine for device configs from structured data
 - ⬜ `config-rollback-manager` — snapshot + rollback with a safe-apply diff preview
 - ⬜ `acl-diff-tool` — structural diff of ACL rule sets, order-aware
 - ⬜ `vlan-consistency-checker` — cross-device VLAN definition consistency audit

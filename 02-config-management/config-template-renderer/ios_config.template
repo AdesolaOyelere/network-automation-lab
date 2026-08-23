@@ -1,0 +1,15 @@
+hostname {{hostname}}
+service timestamps log datetime msec
+ip domain name {{domain_name}}
+{{#name_servers}}ip name-server {{address}}
+{{/name_servers}}{{#interfaces}}interface {{name}}
+ description {{description}}
+ ip address {{ipv4.address}} {{ipv4.mask}}
+{{#helpers}} ip helper-address {{address}}
+{{/helpers}} {{state}}
+!
+{{/interfaces}}router ospf {{ospf.process_id}}
+ router-id {{ospf.router_id}}
+{{#ospf.networks}} network {{prefix}} {{wildcard}} area {{area}}
+{{/ospf.networks}}!
+end

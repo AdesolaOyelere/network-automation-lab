@@ -1,0 +1,13 @@
+{
+  "title": "Config Template Renderer",
+  "slug": "config-template-renderer",
+  "category": "02-config-management",
+  "status": "done",
+  "skills": [
+    "configuration-templating",
+    "structured-data",
+    "strict-validation",
+    "python"
+  ],
+  "summary": "Render deterministic IOS-style device configurations from reusable text templates and validated structured JSON data."
+}
