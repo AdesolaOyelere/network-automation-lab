@@ -1,0 +1,48 @@
+{
+  "n_inventory": 8,
+  "n_filtered": 7,
+  "results": [
+    {
+      "device": "nyc-core1",
+      "success": true,
+      "result": "15.2(4)E7",
+      "error": null
+    },
+    {
+      "device": "nyc-core2",
+      "success": true,
+      "result": "15.2(4)E7",
+      "error": null
+    },
+    {
+      "device": "nyc-dist1",
+      "success": true,
+      "result": "15.2(4)E6",
+      "error": null
+    },
+    {
+      "device": "nyc-edge1",
+      "success": true,
+      "result": "17.3.4a",
+      "error": null
+    },
+    {
+      "device": "sfo-core1",
+      "success": true,
+      "result": "9.3(7)",
+      "error": null
+    },
+    {
+      "device": "sfo-dist1",
+      "success": true,
+      "result": "9.3(7)",
+      "error": null
+    },
+    {
+      "device": "sfo-edge1",
+      "success": false,
+      "result": null,
+      "error": "sfo-edge1: connection timed out"
+    }
+  ]
+}

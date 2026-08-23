@@ -1,0 +1,8 @@
+{
+  "title": "Inventory-Driven Task Runner",
+  "slug": "inventory-driven-task-runner",
+  "category": "08-automation-frameworks",
+  "status": "done",
+  "skills": ["automation-framework", "concurrency", "python"],
+  "summary": "Filters a device inventory by field/tag criteria and runs a task across the filtered set with real bounded thread-pool concurrency, isolating per-device failures."
+}

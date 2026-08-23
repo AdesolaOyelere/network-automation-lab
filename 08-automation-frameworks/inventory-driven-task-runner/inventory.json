@@ -1,0 +1,10 @@
+[
+  {"name": "nyc-core1", "site": "nyc", "role": "core", "platform": "ios", "tags": ["core", "prod"]},
+  {"name": "nyc-core2", "site": "nyc", "role": "core", "platform": "ios", "tags": ["core", "prod"]},
+  {"name": "nyc-dist1", "site": "nyc", "role": "distribution", "platform": "ios", "tags": ["prod"]},
+  {"name": "nyc-edge1", "site": "nyc", "role": "edge", "platform": "iosxe", "tags": ["prod", "edge"]},
+  {"name": "sfo-core1", "site": "sfo", "role": "core", "platform": "nxos", "tags": ["core", "prod"]},
+  {"name": "sfo-dist1", "site": "sfo", "role": "distribution", "platform": "nxos", "tags": ["prod"]},
+  {"name": "sfo-edge1", "site": "sfo", "role": "edge", "platform": "iosxe", "tags": ["prod", "edge"]},
+  {"name": "lab-sw1", "site": "nyc", "role": "distribution", "platform": "ios", "tags": ["lab"]}
+]

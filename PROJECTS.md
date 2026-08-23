@@ -19,7 +19,7 @@ The table below is generated from each project's `meta.json` (run
 | [ACL Rule Auditor](05-security-compliance/acl-rule-auditor/) | `05-security-compliance` | ✅ | Audit mocked device ACLs for overly permissive, shadowed, and unused rules using structural network and service matching. |
 | [Syslog Severity Triager](06-monitoring-observability/syslog-severity-triager/) | `06-monitoring-observability` | ✅ | Parses Cisco-IOS-style syslog lines into structured records, buckets them by severity, and collapses consecutive repeats (e.g. a flapping interface) into aggregated counts. |
 | [Topology Graph Builder](07-topology-discovery/topology-graph-builder/) | `07-topology-discovery` | ✅ | Builds an undirected adjacency graph from LLDP/CDP-style neighbor records, finds isolated components, and locates articulation points (Tarjan's algorithm) that are single points of failure. |
-| [Inventory-Driven Task Runner](08-automation-frameworks/inventory-driven-task-runner/) | `08-automation-frameworks` | 🔨 | Filters a device inventory by field/tag criteria and runs a task across the filtered set with real bounded thread-pool concurrency, isolating per-device failures. |
+| [Inventory-Driven Task Runner](08-automation-frameworks/inventory-driven-task-runner/) | `08-automation-frameworks` | ✅ | Filters a device inventory by field/tag criteria and runs a task across the filtered set with real bounded thread-pool concurrency, isolating per-device failures. |
 | [MAC Address Table Analyzer](09-protocol-analysis/mac-address-table-analyzer/) | `09-protocol-analysis` | 🔨 | Parses per-switch MAC address tables and detects MAC flapping — the same MAC address learned on different ports within a short window, a sign of a loop or spoofing. |
 <!-- INDEX:TABLE:END -->
 
@@ -99,7 +99,7 @@ The table below is generated from each project's `meta.json` (run
 
 ### 08 · Automation Frameworks
 
-- ⬜ `inventory-driven-task-runner` — run a task function across a filtered device inventory
+- ✅ `inventory-driven-task-runner` — run a task function across a filtered device inventory
 - ⬜ `idempotent-playbook-engine` — apply declarative desired-state configs idempotently
 - ⬜ `task-retry-and-backoff` — retry policy wrapper for flaky device operations
 - ⬜ `parallel-execution-throttler` — bounded-concurrency executor for bulk device operations
