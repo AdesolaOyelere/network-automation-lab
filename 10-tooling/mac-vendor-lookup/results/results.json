@@ -1,0 +1,58 @@
+[
+  {
+    "input": "00:0C:29:3A:7B:11",
+    "normalized": "000C293A7B11",
+    "oui": "000C29",
+    "vendor": "VMware, Inc.",
+    "error": null
+  },
+  {
+    "input": "08-00-27-4C-91-02",
+    "normalized": "0800274C9102",
+    "oui": "080027",
+    "vendor": "PCS Systemtechnik GmbH (Oracle VirtualBox)",
+    "error": null
+  },
+  {
+    "input": "0015.5d3f.8a01",
+    "normalized": "00155D3F8A01",
+    "oui": "00155D",
+    "vendor": "Microsoft Corporation (Hyper-V)",
+    "error": null
+  },
+  {
+    "input": "b8:27:eb:1a:2c:3d",
+    "normalized": "B827EB1A2C3D",
+    "oui": "B827EB",
+    "vendor": "Raspberry Pi Foundation",
+    "error": null
+  },
+  {
+    "input": "AA:BB:CC:DD:EE:FF",
+    "normalized": "AABBCCDDEEFF",
+    "oui": "AABBCC",
+    "vendor": "Unknown vendor",
+    "error": null
+  },
+  {
+    "input": "00:0c:29",
+    "normalized": null,
+    "oui": null,
+    "vendor": null,
+    "error": "'00:0c:29' is not a valid MAC address (need 12 hex digits)"
+  },
+  {
+    "input": "52-54-00-12-34-56",
+    "normalized": "525400123456",
+    "oui": "525400",
+    "vendor": "QEMU/KVM virtual NIC",
+    "error": null
+  },
+  {
+    "input": "not-a-mac-address",
+    "normalized": null,
+    "oui": null,
+    "vendor": null,
+    "error": "'not-a-mac-address' is not a valid MAC address (need 12 hex digits)"
+  }
+]

@@ -22,6 +22,7 @@ The table below is generated from each project's `meta.json` (run
 | [Topology Graph Builder](07-topology-discovery/topology-graph-builder/) | `07-topology-discovery` | ✅ | Builds an undirected adjacency graph from LLDP/CDP-style neighbor records, finds isolated components, and locates articulation points (Tarjan's algorithm) that are single points of failure. |
 | [Inventory-Driven Task Runner](08-automation-frameworks/inventory-driven-task-runner/) | `08-automation-frameworks` | ✅ | Filters a device inventory by field/tag criteria and runs a task across the filtered set with real bounded thread-pool concurrency, isolating per-device failures. |
 | [MAC Address Table Analyzer](09-protocol-analysis/mac-address-table-analyzer/) | `09-protocol-analysis` | ✅ | Parses per-switch MAC address tables and detects MAC flapping — the same MAC address learned on different ports within a short window, a sign of a loop or spoofing. |
+| [MAC Vendor Lookup](10-tooling/mac-vendor-lookup/) | `10-tooling` | ✅ | Normalizes a MAC address in any common format, extracts its OUI, and looks it up against a small embedded vendor table. |
 <!-- INDEX:TABLE:END -->
 
 ---
@@ -122,7 +123,7 @@ The table below is generated from each project's `meta.json` (run
 
 - ⬜ `subnet-calculator-cli` — CLI wrapper for the subnetting core
 - ⬜ `config-backup-cli` — CLI to snapshot and version device configs to local storage
-- ⬜ `mac-vendor-lookup` — OUI-prefix to vendor lookup CLI from a local table
+- ✅ `mac-vendor-lookup` — OUI-prefix to vendor lookup CLI from a local table
 - ⬜ `port-scan-lite` — authorized, rate-limited TCP reachability checker for owned/lab hosts
 - ⬜ `inventory-validator-cli` — validate an inventory file against a schema before automation runs
 - ⬜ `config-diff-cli` — side-by-side config diff viewer

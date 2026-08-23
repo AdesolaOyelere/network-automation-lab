@@ -1,0 +1,8 @@
+{
+  "title": "MAC Vendor Lookup",
+  "slug": "mac-vendor-lookup",
+  "category": "10-tooling",
+  "status": "done",
+  "skills": ["mac-address", "cli-tooling", "python"],
+  "summary": "Normalizes a MAC address in any common format, extracts its OUI, and looks it up against a small embedded vendor table."
+}
