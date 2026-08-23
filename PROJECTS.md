@@ -20,7 +20,7 @@ The table below is generated from each project's `meta.json` (run
 | [Syslog Severity Triager](06-monitoring-observability/syslog-severity-triager/) | `06-monitoring-observability` | ✅ | Parses Cisco-IOS-style syslog lines into structured records, buckets them by severity, and collapses consecutive repeats (e.g. a flapping interface) into aggregated counts. |
 | [Topology Graph Builder](07-topology-discovery/topology-graph-builder/) | `07-topology-discovery` | ✅ | Builds an undirected adjacency graph from LLDP/CDP-style neighbor records, finds isolated components, and locates articulation points (Tarjan's algorithm) that are single points of failure. |
 | [Inventory-Driven Task Runner](08-automation-frameworks/inventory-driven-task-runner/) | `08-automation-frameworks` | ✅ | Filters a device inventory by field/tag criteria and runs a task across the filtered set with real bounded thread-pool concurrency, isolating per-device failures. |
-| [MAC Address Table Analyzer](09-protocol-analysis/mac-address-table-analyzer/) | `09-protocol-analysis` | 🔨 | Parses per-switch MAC address tables and detects MAC flapping — the same MAC address learned on different ports within a short window, a sign of a loop or spoofing. |
+| [MAC Address Table Analyzer](09-protocol-analysis/mac-address-table-analyzer/) | `09-protocol-analysis` | ✅ | Parses per-switch MAC address tables and detects MAC flapping — the same MAC address learned on different ports within a short window, a sign of a loop or spoofing. |
 <!-- INDEX:TABLE:END -->
 
 ---
@@ -112,7 +112,7 @@ The table below is generated from each project's `meta.json` (run
 - ⬜ `routing-table-analyzer` — parse a routing table dump, find suboptimal/missing routes
 - ⬜ `bgp-state-parser` — parse BGP neighbor/session state, flag down or flapping sessions
 - ⬜ `ospf-adjacency-checker` — verify OSPF adjacency state matches expected topology
-- ⬜ `mac-address-table-analyzer` — parse MAC tables, detect MAC flapping across ports
+- ✅ `mac-address-table-analyzer` — parse MAC tables, detect MAC flapping across ports
 - ⬜ `packet-capture-summarizer` — summarize a pcap-like log into protocol/conversation stats
 - ⬜ `arp-table-consistency-checker` — cross-device ARP table consistency audit
 - ⬜ `route-flap-damping-simulator` — simulate route flap damping behavior over an event stream

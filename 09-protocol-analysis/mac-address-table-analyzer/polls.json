@@ -1,0 +1,17 @@
+[
+  {
+    "switch": "dist-sw1",
+    "timestamp": "2026-01-15T09:00:00",
+    "text": "          Mac Address Table\n-------------------------------------------\n\nVlan    Mac Address       Type        Ports\n----    -----------       --------    -----\n  10    0011.2233.4455    DYNAMIC     Gi1/0/5\n  10    0011.2233.4466    DYNAMIC     Gi1/0/8\n  20    0011.2233.4477    DYNAMIC     Gi1/0/12\n"
+  },
+  {
+    "switch": "dist-sw1",
+    "timestamp": "2026-01-15T09:00:15",
+    "text": "          Mac Address Table\n-------------------------------------------\n\nVlan    Mac Address       Type        Ports\n----    -----------       --------    -----\n  10    0011.2233.4455    DYNAMIC     Gi1/0/7\n  10    0011.2233.4466    DYNAMIC     Gi1/0/8\n  20    0011.2233.4477    DYNAMIC     Gi1/0/12\n"
+  },
+  {
+    "switch": "dist-sw1",
+    "timestamp": "2026-01-15T11:00:00",
+    "text": "          Mac Address Table\n-------------------------------------------\n\nVlan    Mac Address       Type        Ports\n----    -----------       --------    -----\n  10    0011.2233.4455    DYNAMIC     Gi1/0/5\n  10    0011.2233.4466    DYNAMIC     Gi1/0/9\n  20    0011.2233.4477    DYNAMIC     Gi1/0/12\n"
+  }
+]

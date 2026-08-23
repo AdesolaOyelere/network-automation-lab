@@ -1,0 +1,8 @@
+{
+  "title": "MAC Address Table Analyzer",
+  "slug": "mac-address-table-analyzer",
+  "category": "09-protocol-analysis",
+  "status": "done",
+  "skills": ["mac-table-parsing", "protocol-analysis", "python"],
+  "summary": "Parses per-switch MAC address tables and detects MAC flapping \u2014 the same MAC address learned on different ports within a short window, a sign of a loop or spoofing."
+}

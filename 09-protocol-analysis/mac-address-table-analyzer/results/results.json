@@ -1,0 +1,16 @@
+{
+  "n_entries": 9,
+  "n_flaps": 1,
+  "flaps": [
+    {
+      "switch": "dist-sw1",
+      "vlan": 10,
+      "mac": "0011.2233.4455",
+      "from_port": "Gi1/0/5",
+      "to_port": "Gi1/0/7",
+      "from_timestamp": "2026-01-15T09:00:00",
+      "to_timestamp": "2026-01-15T09:00:15",
+      "delta_seconds": 15.0
+    }
+  ]
+}
