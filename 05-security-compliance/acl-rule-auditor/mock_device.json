@@ -1,0 +1,17 @@
+{
+  "hostname": "edge-fw-01",
+  "collected_at": "2026-08-23T09:00:00Z",
+  "acls": [
+    {"name": "OUTSIDE_IN", "rules": [
+      {"sequence": 10, "action": "permit", "protocol": "tcp", "source": "198.51.100.0/24", "destination": "10.20.0.10/32", "destination_port": "443", "hit_count": 814, "days_since_hit": 0},
+      {"sequence": 20, "action": "permit", "protocol": "tcp", "source": "198.51.100.128/25", "destination": "10.20.0.10/32", "destination_port": "443", "hit_count": 0, "days_since_hit": 91},
+      {"sequence": 30, "action": "permit", "protocol": "any", "source": "0.0.0.0/0", "destination": "0.0.0.0/0", "destination_port": "any", "hit_count": 32, "days_since_hit": 1},
+      {"sequence": 40, "action": "deny", "protocol": "any", "source": "0.0.0.0/0", "destination": "0.0.0.0/0", "destination_port": "any", "hit_count": 12402, "days_since_hit": 0}
+    ]},
+    {"name": "MGMT_IN", "rules": [
+      {"sequence": 10, "action": "permit", "protocol": "tcp", "source": "10.99.0.0/24", "destination": "10.0.0.0/8", "destination_port": "22", "hit_count": 148, "days_since_hit": 0},
+      {"sequence": 20, "action": "permit", "protocol": "tcp", "source": "192.0.2.44/32", "destination": "10.0.0.0/8", "destination_port": "22", "hit_count": 0, "days_since_hit": 120},
+      {"sequence": 30, "action": "deny", "protocol": "any", "source": "0.0.0.0/0", "destination": "0.0.0.0/0", "destination_port": "any", "hit_count": 417, "days_since_hit": 0}
+    ]}
+  ]
+}

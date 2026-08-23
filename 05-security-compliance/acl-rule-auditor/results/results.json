@@ -1,0 +1,55 @@
+{
+  "hostname": "edge-fw-01",
+  "collected_at": "2026-08-23T09:00:00Z",
+  "acl_count": 2,
+  "rule_count": 7,
+  "finding_count": 5,
+  "findings_by_type": {
+    "any-any-permit": 1,
+    "shadowed": 2,
+    "unused": 2
+  },
+  "findings_by_severity": {
+    "critical": 1,
+    "high": 1,
+    "medium": 1,
+    "low": 2
+  },
+  "findings": [
+    {
+      "acl": "OUTSIDE_IN",
+      "sequence": 20,
+      "type": "shadowed",
+      "severity": "medium",
+      "detail": "Fully covered by sequence 10 (permit)"
+    },
+    {
+      "acl": "OUTSIDE_IN",
+      "sequence": 20,
+      "type": "unused",
+      "severity": "low",
+      "detail": "No hits for 91 days"
+    },
+    {
+      "acl": "OUTSIDE_IN",
+      "sequence": 30,
+      "type": "any-any-permit",
+      "severity": "critical",
+      "detail": "Permits all IPv4 traffic"
+    },
+    {
+      "acl": "OUTSIDE_IN",
+      "sequence": 40,
+      "type": "shadowed",
+      "severity": "high",
+      "detail": "Fully covered by sequence 30 (permit)"
+    },
+    {
+      "acl": "MGMT_IN",
+      "sequence": 20,
+      "type": "unused",
+      "severity": "low",
+      "detail": "No hits for 120 days"
+    }
+  ]
+}

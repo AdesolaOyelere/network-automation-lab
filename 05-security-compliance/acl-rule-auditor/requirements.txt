@@ -1,0 +1,1 @@
+# Standard library only; pytest and ruff are repository development dependencies.

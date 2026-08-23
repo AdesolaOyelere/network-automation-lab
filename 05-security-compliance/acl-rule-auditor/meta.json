@@ -1,0 +1,8 @@
+{
+  "title": "ACL Rule Auditor",
+  "slug": "acl-rule-auditor",
+  "category": "05-security-compliance",
+  "status": "done",
+  "skills": ["acl-analysis", "security-auditing", "mock-transport", "python"],
+  "summary": "Audit mocked device ACLs for overly permissive, shadowed, and unused rules using structural network and service matching."
+}
