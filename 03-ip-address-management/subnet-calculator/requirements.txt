@@ -1,0 +1,2 @@
+# Core subnet math, allocator, and tests need only the standard library
+# (ipaddress).

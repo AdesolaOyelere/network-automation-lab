@@ -10,7 +10,9 @@ The table below is generated from each project's `meta.json` (run
 `python scripts/gen_index.py`). The checklist under it is the hand-maintained backlog.
 
 <!-- INDEX:TABLE:START -->
-_No projects with meta.json yet._
+| Project | Category | Status | Summary |
+|---|---|---|---|
+| [Subnet Calculator](03-ip-address-management/subnet-calculator/) | `03-ip-address-management` | ✅ | CIDR subnet math and a VLSM allocator that carves a supernet into subnets sized to host-count requirements without overlap, allocating largest-first to keep every block naturally aligned. |
 <!-- INDEX:TABLE:END -->
 
 ---
@@ -39,7 +41,7 @@ _No projects with meta.json yet._
 
 ### 03 · IP Address Management
 
-- ⬜ `subnet-calculator` — CIDR/VLSM subnetting calculator with a supernet/host-count solver
+- ✅ `subnet-calculator` — CIDR/VLSM subnetting calculator with a supernet/host-count solver
 - ⬜ `ip-allocation-tracker` — track subnet allocations, detect overlaps, find free blocks
 - ⬜ `vlsm-planner` — allocate variable-length subnets to satisfy host-count requirements
 - ⬜ `dhcp-scope-auditor` — detect DHCP scope overlaps and exhaustion risk

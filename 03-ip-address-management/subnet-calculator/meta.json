@@ -1,0 +1,8 @@
+{
+  "title": "Subnet Calculator",
+  "slug": "subnet-calculator",
+  "category": "03-ip-address-management",
+  "status": "done",
+  "skills": ["ip-addressing", "vlsm", "python"],
+  "summary": "CIDR subnet math and a VLSM allocator that carves a supernet into subnets sized to host-count requirements without overlap, allocating largest-first to keep every block naturally aligned."
+}
