@@ -1,0 +1,15 @@
+{
+  "acl_rules": [
+    {"sequence": 10, "action": "permit", "protocol": "tcp", "source": "10.20.10.0/24", "destination": "10.20.0.0/24"},
+    {"sequence": 20, "action": "deny", "protocol": "any", "source": "10.20.30.0/24", "destination": "10.20.0.0/24"},
+    {"sequence": 30, "action": "permit", "protocol": "any", "source": "10.20.0.0/16", "destination": "10.20.0.0/24"},
+    {"sequence": 40, "action": "deny", "protocol": "any", "source": "0.0.0.0/0", "destination": "0.0.0.0/0"}
+  ],
+  "intent": [
+    {"name": "engineering-to-servers-tcp", "src": "10.20.10.0/24", "dst": "10.20.0.0/24", "protocol": "tcp", "expected": "permit"},
+    {"name": "guest-to-servers-blocked", "src": "10.20.30.0/24", "dst": "10.20.0.0/24", "protocol": "tcp", "expected": "deny"},
+    {"name": "unlisted-subnet-should-be-denied", "src": "10.20.40.0/24", "dst": "10.20.0.0/24", "protocol": "tcp", "expected": "deny"},
+    {"name": "engineering-to-specific-server-tcp", "src": "10.20.10.0/24", "dst": "10.20.0.5/32", "protocol": "tcp", "expected": "permit"},
+    {"name": "broad-engineering-supernet-query", "src": "10.20.10.0/23", "dst": "10.20.0.0/24", "protocol": "tcp", "expected": "permit"}
+  ]
+}

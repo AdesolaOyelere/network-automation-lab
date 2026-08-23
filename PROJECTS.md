@@ -15,7 +15,7 @@ The table below is generated from each project's `meta.json` (run
 | [Config Template Renderer](02-config-management/config-template-renderer/) | `02-config-management` | ✅ | Render deterministic IOS-style device configurations from reusable text templates and validated structured JSON data. |
 | [Golden Config Drift Detector](02-config-management/golden-config-drift-detector/) | `02-config-management` | ✅ | Compare mocked device running configuration against a golden baseline and report normalized missing, unexpected, and changed configuration. |
 | [Subnet Calculator](03-ip-address-management/subnet-calculator/) | `03-ip-address-management` | ✅ | CIDR subnet math and a VLSM allocator that carves a supernet into subnets sized to host-count requirements without overlap, allocating largest-first to keep every block naturally aligned. |
-| [Reachability Matrix Tester](04-network-validation-testing/reachability-matrix-tester/) | `04-network-validation-testing` | 🔨 | Tests expected reachability between subnet pairs against a set of ACL and static-route rules, reporting where declared intent and actual policy disagree. |
+| [Reachability Matrix Tester](04-network-validation-testing/reachability-matrix-tester/) | `04-network-validation-testing` | ✅ | Tests a declared reachability intent matrix against actual ACL evaluation order, reporting violations (intent and policy disagree) and honestly flagging subnet-level queries a rule only partially covers. |
 | [ACL Rule Auditor](05-security-compliance/acl-rule-auditor/) | `05-security-compliance` | ✅ | Audit mocked device ACLs for overly permissive, shadowed, and unused rules using structural network and service matching. |
 | [Syslog Severity Triager](06-monitoring-observability/syslog-severity-triager/) | `06-monitoring-observability` | ✅ | Parses Cisco-IOS-style syslog lines into structured records, buckets them by severity, and collapses consecutive repeats (e.g. a flapping interface) into aggregated counts. |
 | [Topology Graph Builder](07-topology-discovery/topology-graph-builder/) | `07-topology-discovery` | ✅ | Builds an undirected adjacency graph from LLDP/CDP-style neighbor records, finds isolated components, and locates articulation points (Tarjan's algorithm) that are single points of failure. |
@@ -60,7 +60,7 @@ The table below is generated from each project's `meta.json` (run
 ### 04 · Network Validation & Testing
 
 - ⬜ `pre-post-change-validator` — snapshot device state before/after a change, diff and flag regressions
-- ⬜ `reachability-matrix-tester` — test expected reachability between subnets against ACL/routing rules
+- ✅ `reachability-matrix-tester` — test expected reachability between subnets against ACL/routing rules
 - ⬜ `config-intent-checker` — assert a config satisfies a declared intent (e.g. "port X = access vlan Y")
 - ⬜ `change-window-risk-scorer` — score a planned change's blast radius from the topology graph
 - ⬜ `synthetic-traffic-test-harness` — scripted ping/traceroute-style checks against a mock topology

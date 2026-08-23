@@ -1,0 +1,8 @@
+{
+  "title": "Reachability Matrix Tester",
+  "slug": "reachability-matrix-tester",
+  "category": "04-network-validation-testing",
+  "status": "done",
+  "skills": ["network-validation", "acl-evaluation", "python"],
+  "summary": "Tests a declared reachability intent matrix against actual ACL evaluation order, reporting violations (intent and policy disagree) and honestly flagging subnet-level queries a rule only partially covers."
+}

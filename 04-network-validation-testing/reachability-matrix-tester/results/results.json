@@ -1,0 +1,65 @@
+{
+  "summary": {
+    "total": 5,
+    "pass": 3,
+    "violation": 1,
+    "ambiguous": 1
+  },
+  "results": [
+    {
+      "name": "engineering-to-servers-tcp",
+      "src": "10.20.10.0/24",
+      "dst": "10.20.0.0/24",
+      "protocol": "tcp",
+      "expected": "permit",
+      "verdict": "permit",
+      "matched_rule_seq": 10,
+      "reason": null,
+      "status": "pass"
+    },
+    {
+      "name": "guest-to-servers-blocked",
+      "src": "10.20.30.0/24",
+      "dst": "10.20.0.0/24",
+      "protocol": "tcp",
+      "expected": "deny",
+      "verdict": "deny",
+      "matched_rule_seq": 20,
+      "reason": null,
+      "status": "pass"
+    },
+    {
+      "name": "unlisted-subnet-should-be-denied",
+      "src": "10.20.40.0/24",
+      "dst": "10.20.0.0/24",
+      "protocol": "tcp",
+      "expected": "deny",
+      "verdict": "permit",
+      "matched_rule_seq": 30,
+      "reason": null,
+      "status": "violation"
+    },
+    {
+      "name": "engineering-to-specific-server-tcp",
+      "src": "10.20.10.0/24",
+      "dst": "10.20.0.5/32",
+      "protocol": "tcp",
+      "expected": "permit",
+      "verdict": "permit",
+      "matched_rule_seq": 10,
+      "reason": null,
+      "status": "pass"
+    },
+    {
+      "name": "broad-engineering-supernet-query",
+      "src": "10.20.10.0/23",
+      "dst": "10.20.0.0/24",
+      "protocol": "tcp",
+      "expected": "permit",
+      "verdict": "mixed",
+      "matched_rule_seq": 10,
+      "reason": "rule 10 only partially overlaps the queried range",
+      "status": "ambiguous"
+    }
+  ]
+}
