@@ -1,0 +1,31 @@
+{
+  "n_routes": 13,
+  "has_default_route": false,
+  "not_installed": [
+    {
+      "route": {
+        "network": "10.20.0.0",
+        "prefix_len": 24,
+        "next_hop": "10.0.1.5",
+        "protocol": "ospf",
+        "metric": 20,
+        "admin_distance": 110,
+        "interface": null
+      },
+      "reason": "administrative distance 110 loses to installed route's AD 1 (static)"
+    }
+  ],
+  "flagged_high_metric": [
+    {
+      "network": "10.60.0.0",
+      "prefix_len": 24,
+      "next_hop": "10.0.1.9",
+      "protocol": "ospf",
+      "metric": 400,
+      "admin_distance": 110,
+      "interface": null,
+      "protocol_median_metric": 25,
+      "threshold": 75.0
+    }
+  ]
+}

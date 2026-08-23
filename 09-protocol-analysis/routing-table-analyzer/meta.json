@@ -1,0 +1,8 @@
+{
+  "title": "Routing Table Analyzer",
+  "slug": "routing-table-analyzer",
+  "category": "09-protocol-analysis",
+  "status": "done",
+  "skills": ["routing", "admin-distance", "parsing", "python"],
+  "summary": "Parses a show-ip-route-style dump, determines which candidate route is actually installed by administrative distance, and flags a missing default route or outlier metrics."
+}

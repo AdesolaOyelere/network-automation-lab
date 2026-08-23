@@ -22,6 +22,7 @@ The table below is generated from each project's `meta.json` (run
 | [Topology Graph Builder](07-topology-discovery/topology-graph-builder/) | `07-topology-discovery` | ✅ | Builds an undirected adjacency graph from LLDP/CDP-style neighbor records, finds isolated components, and locates articulation points (Tarjan's algorithm) that are single points of failure. |
 | [Inventory-Driven Task Runner](08-automation-frameworks/inventory-driven-task-runner/) | `08-automation-frameworks` | ✅ | Filters a device inventory by field/tag criteria and runs a task across the filtered set with real bounded thread-pool concurrency, isolating per-device failures. |
 | [MAC Address Table Analyzer](09-protocol-analysis/mac-address-table-analyzer/) | `09-protocol-analysis` | ✅ | Parses per-switch MAC address tables and detects MAC flapping — the same MAC address learned on different ports within a short window, a sign of a loop or spoofing. |
+| [Routing Table Analyzer](09-protocol-analysis/routing-table-analyzer/) | `09-protocol-analysis` | ✅ | Parses a show-ip-route-style dump, determines which candidate route is actually installed by administrative distance, and flags a missing default route or outlier metrics. |
 | [MAC Vendor Lookup](10-tooling/mac-vendor-lookup/) | `10-tooling` | ✅ | Normalizes a MAC address in any common format, extracts its OUI, and looks it up against a small embedded vendor table. |
 <!-- INDEX:TABLE:END -->
 
@@ -111,7 +112,7 @@ The table below is generated from each project's `meta.json` (run
 
 ### 09 · Protocol & Routing Analysis
 
-- ⬜ `routing-table-analyzer` — parse a routing table dump, find suboptimal/missing routes
+- ✅ `routing-table-analyzer` — parse a routing table dump, find suboptimal/missing routes
 - ⬜ `bgp-state-parser` — parse BGP neighbor/session state, flag down or flapping sessions
 - ⬜ `ospf-adjacency-checker` — verify OSPF adjacency state matches expected topology
 - ✅ `mac-address-table-analyzer` — parse MAC tables, detect MAC flapping across ports

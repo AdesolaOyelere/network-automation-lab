@@ -1,0 +1,17 @@
+Codes: C - connected, S - static, O - OSPF, B - BGP
+
+Gateway of last resort is not set
+
+C    10.0.0.0/24 is directly connected, GigabitEthernet0/1
+C    10.0.1.0/24 is directly connected, GigabitEthernet0/2
+C    10.0.2.0/24 is directly connected, GigabitEthernet0/3
+S    10.10.0.0/24 [1/0] via 10.0.0.5
+S    10.20.0.0/24 [1/0] via 10.0.0.6
+O    10.20.0.0/24 [110/20] via 10.0.1.5, 00:10:00, GigabitEthernet0/2
+O    10.30.0.0/24 [110/25] via 10.0.1.6, 00:10:00, GigabitEthernet0/2
+O    10.40.0.0/24 [110/22] via 10.0.1.7, 00:10:00, GigabitEthernet0/2
+O    10.50.0.0/24 [110/28] via 10.0.1.8, 00:10:00, GigabitEthernet0/2
+O    10.60.0.0/24 [110/400] via 10.0.1.9, 00:10:00, GigabitEthernet0/2
+B    10.100.0.0/24 [20/0] via 10.0.2.5, 00:05:00
+B    10.101.0.0/24 [20/0] via 10.0.2.6, 00:05:00
+B    10.102.0.0/24 [20/0] via 10.0.2.7, 00:05:00
