@@ -1,0 +1,71 @@
+[
+  {
+    "intent": {
+      "type": "interface_access_vlan",
+      "interface": "GigabitEthernet0/1",
+      "vlan": 20
+    },
+    "passed": true,
+    "reason": null
+  },
+  {
+    "intent": {
+      "type": "interface_access_vlan",
+      "interface": "GigabitEthernet0/3",
+      "vlan": 30
+    },
+    "passed": true,
+    "reason": null
+  },
+  {
+    "intent": {
+      "type": "interface_access_vlan",
+      "interface": "GigabitEthernet0/3",
+      "vlan": 10
+    },
+    "passed": false,
+    "reason": "found switchport access vlan 30, expected 10"
+  },
+  {
+    "intent": {
+      "type": "interface_access_vlan",
+      "interface": "GigabitEthernet0/2",
+      "vlan": 10
+    },
+    "passed": false,
+    "reason": "interface GigabitEthernet0/2 is not in access mode"
+  },
+  {
+    "intent": {
+      "type": "interface_access_vlan",
+      "interface": "GigabitEthernet0/9",
+      "vlan": 5
+    },
+    "passed": false,
+    "reason": "interface GigabitEthernet0/9 not found in config"
+  },
+  {
+    "intent": {
+      "type": "line_present",
+      "pattern": "^hostname\\s+sw1$"
+    },
+    "passed": true,
+    "reason": null
+  },
+  {
+    "intent": {
+      "type": "line_present",
+      "pattern": "^ip domain-name\\s+example\\.com$"
+    },
+    "passed": true,
+    "reason": null
+  },
+  {
+    "intent": {
+      "type": "line_present",
+      "pattern": "^ntp server "
+    },
+    "passed": false,
+    "reason": "no line matching pattern '^ntp server ' found in config"
+  }
+]

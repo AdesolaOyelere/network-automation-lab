@@ -1,0 +1,8 @@
+{
+  "title": "Config Intent Checker",
+  "slug": "config-intent-checker",
+  "category": "04-network-validation-testing",
+  "status": "done",
+  "skills": ["config-validation", "parsing", "python"],
+  "summary": "Parses hierarchical device config into a structured block model and checks declarative intents against it, with a specific pass/fail reason per check."
+}
