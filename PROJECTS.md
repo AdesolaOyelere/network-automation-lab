@@ -12,6 +12,7 @@ The table below is generated from each project's `meta.json` (run
 <!-- INDEX:TABLE:START -->
 | Project | Category | Status | Summary |
 |---|---|---|---|
+| [Bulk Command Runner](01-device-automation/bulk-command-runner/) | `01-device-automation` | ✅ | Runs one command across a device fleet via a mock transport, extracts a field with regex, and flags devices that drift from an expected baseline value. |
 | [Config Template Renderer](02-config-management/config-template-renderer/) | `02-config-management` | ✅ | Render deterministic IOS-style device configurations from reusable text templates and validated structured JSON data. |
 | [Golden Config Drift Detector](02-config-management/golden-config-drift-detector/) | `02-config-management` | ✅ | Compare mocked device running configuration against a golden baseline and report normalized missing, unexpected, and changed configuration. |
 | [Subnet Calculator](03-ip-address-management/subnet-calculator/) | `03-ip-address-management` | ✅ | CIDR subnet math and a VLSM allocator that carves a supernet into subnets sized to host-count requirements without overlap, allocating largest-first to keep every block naturally aligned. |
@@ -30,7 +31,7 @@ The table below is generated from each project's `meta.json` (run
 ### 01 · Device Automation
 
 - ⬜ `ssh-config-pusher` — push config snippets to a mocked multi-vendor device over SSH
-- ⬜ `bulk-command-runner` — run a show/config command across many devices, aggregate results
+- ✅ `bulk-command-runner` — run a show/config command across many devices, aggregate results
 - ⬜ `config-backup-scheduler` — pull and version running-configs on a schedule
 - ⬜ `multi-vendor-cli-abstraction` — normalize IOS/Junos/EOS command syntax behind one interface
 - ⬜ `interface-bounce-automation` — safely shut/no-shut interfaces with pre/post state checks

@@ -1,0 +1,17 @@
+{
+  "command": "show version",
+  "baseline_version": "15.2(4)E7",
+  "devices": ["sw1", "sw2", "sw3", "sw4", "sw5", "sw6", "sw7", "sw8", "sw9", "sw10"],
+  "unreachable": ["sw9"],
+  "fixtures": {
+    "sw1": { "show version": "Cisco IOS Software, C2960X Software, Version 15.2(4)E7, RELEASE SOFTWARE (fc3)\nsw1 uptime is 40 weeks" },
+    "sw2": { "show version": "Cisco IOS Software, C2960X Software, Version 15.2(4)E7, RELEASE SOFTWARE (fc3)\nsw2 uptime is 40 weeks" },
+    "sw3": { "show version": "Cisco IOS Software, C2960X Software, Version 15.2(4)E7, RELEASE SOFTWARE (fc3)\nsw3 uptime is 39 weeks" },
+    "sw4": { "show version": "Cisco IOS Software, C2960X Software, Version 15.0(2)SE11, RELEASE SOFTWARE (fc1)\nsw4 uptime is 91 weeks" },
+    "sw5": { "show version": "Cisco IOS Software, C2960X Software, Version 15.2(4)E7, RELEASE SOFTWARE (fc3)\nsw5 uptime is 38 weeks" },
+    "sw6": { "show version": "Cisco IOS Software, C2960X Software, Version 15.2(4)E7, RELEASE SOFTWARE (fc3)\nsw6 uptime is 40 weeks" },
+    "sw7": { "show version": "Cisco IOS Software, C2960X Software, Version 15.0(2)SE11, RELEASE SOFTWARE (fc1)\nsw7 uptime is 89 weeks" },
+    "sw8": { "show version": "Cisco IOS Software, C2960X Software, Version 15.2(4)E7, RELEASE SOFTWARE (fc3)\nsw8 uptime is 40 weeks" },
+    "sw10": { "show version": "Cisco IOS Software, C2960X Software, Version 15.2(3)E3, RELEASE SOFTWARE (fc2)\nsw10 uptime is 12 weeks" }
+  }
+}

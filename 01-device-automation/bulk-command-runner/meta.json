@@ -1,0 +1,8 @@
+{
+  "title": "Bulk Command Runner",
+  "slug": "bulk-command-runner",
+  "category": "01-device-automation",
+  "status": "done",
+  "skills": ["device-automation", "bulk-operations", "regex-extraction", "python"],
+  "summary": "Runs one command across a device fleet via a mock transport, extracts a field with regex, and flags devices that drift from an expected baseline value."
+}

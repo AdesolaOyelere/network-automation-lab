@@ -1,0 +1,32 @@
+{
+  "baseline": "15.2(4)E7",
+  "n_devices": 10,
+  "n_matched": 6,
+  "n_drifted": 3,
+  "n_unreachable": 1,
+  "matched": [
+    "sw1",
+    "sw2",
+    "sw3",
+    "sw5",
+    "sw6",
+    "sw8"
+  ],
+  "drifted": [
+    {
+      "device": "sw4",
+      "extracted": "15.0(2)SE11"
+    },
+    {
+      "device": "sw7",
+      "extracted": "15.0(2)SE11"
+    },
+    {
+      "device": "sw10",
+      "extracted": "15.2(3)E3"
+    }
+  ],
+  "unreachable": [
+    "sw9"
+  ]
+}
