@@ -1,0 +1,13 @@
+{
+  "title": "Golden Config Drift Detector",
+  "slug": "golden-config-drift-detector",
+  "category": "02-config-management",
+  "status": "done",
+  "skills": [
+    "config-normalization",
+    "drift-detection",
+    "mock-transport",
+    "python"
+  ],
+  "summary": "Compare mocked device running configuration against a golden baseline and report normalized missing, unexpected, and changed configuration."
+}

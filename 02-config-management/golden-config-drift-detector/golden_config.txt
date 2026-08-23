@@ -1,0 +1,21 @@
+version 17.9
+hostname branch-rtr-01
+service timestamps log datetime msec
+no ip http server
+ip ssh version 2
+ntp server 192.0.2.10
+interface GigabitEthernet0/0
+ description WAN uplink - carrier A
+ ip address 198.51.100.2 255.255.255.252
+ no shutdown
+interface GigabitEthernet0/1
+ description User LAN
+ ip address 10.20.0.1 255.255.255.0
+ ip helper-address 10.99.0.10
+ no shutdown
+router ospf 10
+ router-id 10.255.0.1
+ passive-interface GigabitEthernet0/1
+ network 10.20.0.0 0.0.0.255 area 0
+logging host 192.0.2.50
+end

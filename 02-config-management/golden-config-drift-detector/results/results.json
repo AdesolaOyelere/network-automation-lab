@@ -1,0 +1,44 @@
+{
+  "hostname": "branch-rtr-01",
+  "in_sync": false,
+  "summary": {
+    "changed": 2,
+    "missing": 0,
+    "unexpected": 5
+  },
+  "changed": [
+    {
+      "context": "interface GigabitEthernet0/0",
+      "expected": "description WAN uplink - carrier A",
+      "actual": "description WAN uplink - carrier B"
+    },
+    {
+      "context": "interface GigabitEthernet0/1",
+      "expected": "ip helper-address 10.99.0.10",
+      "actual": "ip helper-address 10.99.0.20"
+    }
+  ],
+  "missing": [],
+  "unexpected": [
+    {
+      "context": "global",
+      "command": "interface GigabitEthernet0/2"
+    },
+    {
+      "context": "interface GigabitEthernet0/2",
+      "command": "description Temporary lab"
+    },
+    {
+      "context": "interface GigabitEthernet0/2",
+      "command": "ip address 10.30.0.1 255.255.255.0"
+    },
+    {
+      "context": "interface GigabitEthernet0/2",
+      "command": "no shutdown"
+    },
+    {
+      "context": "router ospf 10",
+      "command": "network 10.30.0.0 0.0.0.255 area 0"
+    }
+  ]
+}

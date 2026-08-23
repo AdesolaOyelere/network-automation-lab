@@ -1,0 +1,4 @@
+{
+  "hostname": "branch-rtr-01",
+  "running_config": "version 17.9\n! Last configuration change at 08:42:11 UTC\nhostname branch-rtr-01\nservice timestamps log datetime msec\nno ip http server\nip ssh version 2\nntp server 192.0.2.10\ninterface GigabitEthernet0/0\n description WAN uplink - carrier B\n ip address 198.51.100.2 255.255.255.252\n no shutdown\ninterface GigabitEthernet0/1\n description User LAN\n ip address 10.20.0.1 255.255.255.0\n ip helper-address 10.99.0.20\n no shutdown\ninterface GigabitEthernet0/2\n description Temporary lab\n ip address 10.30.0.1 255.255.255.0\n no shutdown\nrouter ospf 10\n router-id 10.255.0.1\n passive-interface GigabitEthernet0/1\n network 10.20.0.0 0.0.0.255 area 0\n network 10.30.0.0 0.0.0.255 area 0\nlogging host 192.0.2.50\nend\n"
+}
