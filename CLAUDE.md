@@ -3,9 +3,12 @@
 A public portfolio repo: self-contained network automation and administration
 projects, built by Adesola Oyelere (network engineer) to demonstrate real Python
 engineering in their own domain. It mirrors the structure and conventions of the
-sibling repo `ai-training-lab` (same author, `../ai-training-lab`) —
-when in doubt about a convention not covered here, look at a finished project over
-there (e.g. `07-finetuning/dataset-decontamination/`) before guessing.
+sibling repo `ai-training-lab` (same author, `../ai-training-lab`). For the exact
+shape a finished project should take, look at
+`03-ip-address-management/subnet-calculator/` in this repo first — it's the
+reference example. If a convention isn't covered here or exemplified there, look at
+a finished project in `ai-training-lab` (e.g. `07-finetuning/dataset-decontamination/`)
+before guessing.
 
 ## The one hard rule
 
@@ -93,9 +96,9 @@ Every project lives at `<category>/<slug>/` and follows this shape:
 
 - One commit per project, in the style above. No `--amend`, no force-push, no
   `--no-verify`.
-- This repo has no GitHub remote yet and its first push/repo-creation needs the
-  user's explicit go-ahead (name, visibility) — don't create the remote or push
-  preemptively. Once a remote exists, this note is stale; push normally but still
-  confirm before anything destructive (force-push, history rewrite).
+- The GitHub remote exists: `origin` -> `https://github.com/AdesolaOyelere/network-automation-lab`
+  (public), branch `main`. Push normally after each project's commit — no need to ask
+  first for a routine push, but still confirm before anything destructive (force-push,
+  history rewrite, `--amend` on a pushed commit).
 - Local git identity for this repo: `Adesola Oyelere <oyelere.emmanuel@gmail.com>`
   (already configured locally, not global).
