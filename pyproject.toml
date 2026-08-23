@@ -1,0 +1,25 @@
+[project]
+name = "network-automation-lab"
+version = "0.1.0"
+description = "Open-source portfolio of network automation, administration, and tooling."
+authors = [{ name = "Adesola Oyelere" }]
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["."]
