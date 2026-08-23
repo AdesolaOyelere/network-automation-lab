@@ -1,0 +1,67 @@
+{
+  "flapping": {
+    "window_seconds": 60,
+    "threshold": 4,
+    "interfaces": [
+      {
+        "device": "sw1",
+        "interface": "Gi0/1",
+        "n_transitions": 2,
+        "max_transitions_in_window": 2,
+        "flapping": false
+      },
+      {
+        "device": "sw1",
+        "interface": "Gi0/4",
+        "n_transitions": 6,
+        "max_transitions_in_window": 2,
+        "flapping": false
+      },
+      {
+        "device": "sw2",
+        "interface": "Gi0/3",
+        "n_transitions": 6,
+        "max_transitions_in_window": 6,
+        "flapping": true
+      },
+      {
+        "device": "sw3",
+        "interface": "Gi0/1",
+        "n_transitions": 2,
+        "max_transitions_in_window": 1,
+        "flapping": false
+      }
+    ]
+  },
+  "uptime": {
+    "observed_start": "2026-01-15T09:00:00",
+    "observed_end": "2026-01-15T13:15:00",
+    "total_seconds": 15300.0,
+    "interfaces": [
+      {
+        "device": "sw1",
+        "interface": "Gi0/1",
+        "down_seconds": 5.0,
+        "uptime_pct": 0.9997
+      },
+      {
+        "device": "sw1",
+        "interface": "Gi0/4",
+        "down_seconds": 15.0,
+        "uptime_pct": 0.999
+      },
+      {
+        "device": "sw2",
+        "interface": "Gi0/3",
+        "down_seconds": 25.0,
+        "uptime_pct": 0.9984
+      },
+      {
+        "device": "sw3",
+        "interface": "Gi0/1",
+        "down_seconds": 900.0,
+        "uptime_pct": 0.9412
+      }
+    ]
+  }
+}

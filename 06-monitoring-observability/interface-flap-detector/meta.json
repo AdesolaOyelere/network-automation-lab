@@ -1,0 +1,8 @@
+{
+  "title": "Interface Flap Detector",
+  "slug": "interface-flap-detector",
+  "category": "06-monitoring-observability",
+  "status": "done",
+  "skills": ["monitoring", "sliding-window", "python"],
+  "summary": "Detects flapping interfaces with a real sliding time-window transition counter, plus per-interface uptime percentage over the observed period."
+}

@@ -1,0 +1,18 @@
+[
+  { "timestamp": "2026-01-15T09:00:00", "device": "sw1", "interface": "Gi0/1", "state": "down" },
+  { "timestamp": "2026-01-15T10:00:00", "device": "sw2", "interface": "Gi0/3", "state": "down" },
+  { "timestamp": "2026-01-15T09:00:05", "device": "sw1", "interface": "Gi0/1", "state": "up" },
+  { "timestamp": "2026-01-15T10:00:08", "device": "sw2", "interface": "Gi0/3", "state": "up" },
+  { "timestamp": "2026-01-15T09:00:00", "device": "sw1", "interface": "Gi0/4", "state": "down" },
+  { "timestamp": "2026-01-15T10:00:15", "device": "sw2", "interface": "Gi0/3", "state": "down" },
+  { "timestamp": "2026-01-15T09:00:05", "device": "sw1", "interface": "Gi0/4", "state": "up" },
+  { "timestamp": "2026-01-15T10:00:22", "device": "sw2", "interface": "Gi0/3", "state": "up" },
+  { "timestamp": "2026-01-15T13:00:00", "device": "sw3", "interface": "Gi0/1", "state": "down" },
+  { "timestamp": "2026-01-15T10:00:30", "device": "sw2", "interface": "Gi0/3", "state": "down" },
+  { "timestamp": "2026-01-15T10:30:00", "device": "sw1", "interface": "Gi0/4", "state": "down" },
+  { "timestamp": "2026-01-15T10:00:40", "device": "sw2", "interface": "Gi0/3", "state": "up" },
+  { "timestamp": "2026-01-15T10:30:05", "device": "sw1", "interface": "Gi0/4", "state": "up" },
+  { "timestamp": "2026-01-15T13:15:00", "device": "sw3", "interface": "Gi0/1", "state": "up" },
+  { "timestamp": "2026-01-15T12:00:00", "device": "sw1", "interface": "Gi0/4", "state": "down" },
+  { "timestamp": "2026-01-15T12:00:05", "device": "sw1", "interface": "Gi0/4", "state": "up" }
+]
