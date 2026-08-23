@@ -1,0 +1,13 @@
+[
+  {"device": "core1", "neighbor": "core2", "local_port": "Gi0/1", "remote_port": "Gi0/1"},
+  {"device": "core2", "neighbor": "core1", "local_port": "Gi0/1", "remote_port": "Gi0/1"},
+  {"device": "core2", "neighbor": "core3", "local_port": "Gi0/2", "remote_port": "Gi0/1"},
+  {"device": "core3", "neighbor": "core2", "local_port": "Gi0/1", "remote_port": "Gi0/2"},
+  {"device": "core3", "neighbor": "core1", "local_port": "Gi0/2", "remote_port": "Gi0/2"},
+  {"device": "core1", "neighbor": "core3", "local_port": "Gi0/2", "remote_port": "Gi0/2"},
+  {"device": "agg1", "neighbor": "core1", "local_port": "Gi0/1", "remote_port": "Gi0/3"},
+  {"device": "core1", "neighbor": "agg1", "local_port": "Gi0/3", "remote_port": "Gi0/1"},
+  {"device": "dist1", "neighbor": "agg1", "local_port": "Gi0/1", "remote_port": "Gi0/1"},
+  {"device": "dist2", "neighbor": "agg1", "local_port": "Gi0/1", "remote_port": "Gi0/2"},
+  {"device": "island1", "neighbor": "island2", "local_port": "Gi0/1", "remote_port": "Gi0/1"}
+]

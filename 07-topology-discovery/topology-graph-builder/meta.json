@@ -1,0 +1,8 @@
+{
+  "title": "Topology Graph Builder",
+  "slug": "topology-graph-builder",
+  "category": "07-topology-discovery",
+  "status": "done",
+  "skills": ["graph-algorithms", "topology-discovery", "python"],
+  "summary": "Builds an undirected adjacency graph from LLDP/CDP-style neighbor records, finds isolated components, and locates articulation points (Tarjan's algorithm) that are single points of failure."
+}

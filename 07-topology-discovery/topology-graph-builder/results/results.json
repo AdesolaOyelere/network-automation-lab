@@ -1,0 +1,24 @@
+{
+  "n_devices": 8,
+  "n_raw_records": 11,
+  "n_unique_edges": 7,
+  "n_components": 2,
+  "components": [
+    [
+      "agg1",
+      "core1",
+      "core2",
+      "core3",
+      "dist1",
+      "dist2"
+    ],
+    [
+      "island1",
+      "island2"
+    ]
+  ],
+  "articulation_points": [
+    "agg1",
+    "core1"
+  ]
+}

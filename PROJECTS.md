@@ -15,7 +15,12 @@ The table below is generated from each project's `meta.json` (run
 | [Config Template Renderer](02-config-management/config-template-renderer/) | `02-config-management` | ✅ | Render deterministic IOS-style device configurations from reusable text templates and validated structured JSON data. |
 | [Golden Config Drift Detector](02-config-management/golden-config-drift-detector/) | `02-config-management` | ✅ | Compare mocked device running configuration against a golden baseline and report normalized missing, unexpected, and changed configuration. |
 | [Subnet Calculator](03-ip-address-management/subnet-calculator/) | `03-ip-address-management` | ✅ | CIDR subnet math and a VLSM allocator that carves a supernet into subnets sized to host-count requirements without overlap, allocating largest-first to keep every block naturally aligned. |
+| [Reachability Matrix Tester](04-network-validation-testing/reachability-matrix-tester/) | `04-network-validation-testing` | 🔨 | Tests expected reachability between subnet pairs against a set of ACL and static-route rules, reporting where declared intent and actual policy disagree. |
 | [ACL Rule Auditor](05-security-compliance/acl-rule-auditor/) | `05-security-compliance` | ✅ | Audit mocked device ACLs for overly permissive, shadowed, and unused rules using structural network and service matching. |
+| [Syslog Severity Triager](06-monitoring-observability/syslog-severity-triager/) | `06-monitoring-observability` | 🔨 | Parses Cisco-IOS-style syslog lines into structured records, buckets them by severity, and collapses consecutive repeats (e.g. a flapping interface) into aggregated counts. |
+| [Topology Graph Builder](07-topology-discovery/topology-graph-builder/) | `07-topology-discovery` | ✅ | Builds an undirected adjacency graph from LLDP/CDP-style neighbor records, finds isolated components, and locates articulation points (Tarjan's algorithm) that are single points of failure. |
+| [Inventory-Driven Task Runner](08-automation-frameworks/inventory-driven-task-runner/) | `08-automation-frameworks` | 🔨 | Filters a device inventory by field/tag criteria and runs a task across the filtered set with real bounded thread-pool concurrency, isolating per-device failures. |
+| [MAC Address Table Analyzer](09-protocol-analysis/mac-address-table-analyzer/) | `09-protocol-analysis` | 🔨 | Parses per-switch MAC address tables and detects MAC flapping — the same MAC address learned on different ports within a short window, a sign of a loop or spoofing. |
 <!-- INDEX:TABLE:END -->
 
 ---
@@ -85,7 +90,7 @@ The table below is generated from each project's `meta.json` (run
 ### 07 · Topology Discovery
 
 - ⬜ `lldp-cdp-neighbor-parser` — parse neighbor discovery output into a normalized adjacency list
-- ⬜ `topology-graph-builder` — build a network graph from discovered adjacencies, detect loops/islands
+- ✅ `topology-graph-builder` — build a network graph from discovered adjacencies, detect loops/islands
 - ⬜ `inventory-auto-generator` — generate a device inventory from discovery output
 - ⬜ `single-point-of-failure-finder` — find topology cut-vertices (graph articulation points)
 - ⬜ `vlan-topology-mapper` — map VLAN presence across the discovered topology
